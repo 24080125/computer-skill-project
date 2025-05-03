@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+        content="width=device-width, initial -scale = 1.0" />
+        <title> الرئيسية </title>
+        <style>
+            *{
+                margin: 0; padding :0 ; box-sizing: border-box;
+                font-family: 'cairo' , sans-serif;
+            }
+            body {
+                background:linear-gradient(to right, #dfe9f3, #ffffff ) ;
+                color: #333;
+            }
+            header{
+                background-color: #ff6f61;
+                padding: 15px 30px ;
+                display : flex ;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0 4px 10px 
+                rgpa(0,0,0,0.1);
+            }
+            header h1 {
+                color : white;
+            }
+            h2{color:blue}
+            nav a {
+                margin-left: 20px ;
+                color : white ;
+                text-decoration: none ;
+                font-weight: bold ;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: #222;
+            }
+            main{
+                padding: 60px 20px ;
+                text-align: center;
+                animation: fadeIn 1s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from{
+                    opacity: 0; transform: translateY(20px);
+                }
+                to {
+                    opacity: 1; transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>موقعي العصري</h1>
+            <nav>
+                <a href="home.html">الرئيسية</a>
+                <a href="login.html">تسجيل الدخول</a>
+                <a href="about.html"> من نحن </a>
+            </nav>
+        </header>
+        <main>
+            <h2>مرحبا بك في موقعنا </h2>
+            <p>هذا  الموقع تم تصميمه كمشروع بسيط باستخدام HTML,CSS الهدف منه هو عرض مهارتنا الاساسية في تصميم صفحات الويب  يمكنك من خلال الموقع التعرف علينا وتسجيل الدخول لتجربة النموذج  </p>
+        </main>
+    </body>
+    </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+        content="width=device-width, initial -scale = 1.0" />
+        <title></title>تسجيل الدخول</title>
+        <style>
+            *{
+                margin: 0; padding :0 ; box-sizing: border-box;
+                font-family: 'cairo' , sans-serif;
+            }
+            body {
+                background:linear-gradient(to right, #ffffff, #60adf5 ) ;
+                color: #333;
+            }
+            header{
+                background-color: #86f8c3;
+                padding: 15px 30px ;
+                display : flex ;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0 4px 10px 
+                rgpa(0,0,0,0.1);
+            }
+            header h1 {
+                color : white;
+            }
+            nav a {
+                margin-left: 20px ;
+                color : white ;
+                text-decoration: none ;
+                font-weight: bold ;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: #222;
+            }
+            main{
+                padding: 60px 20px ;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                animation: fadeIn 1s ease-in-out;
+            }
+            form {
+                background:white;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px
+                rgpa(0,0,0,0.1);
+                width: 100%;
+                max-width: 400px;
+            }
+            input {
+                width: 100%;
+                padding :12px;
+                border:1px solid #ccc ;
+                border-radius: 8px ;
+                font-size: 1em ;
+            }
+            button {
+                background-color: #00b894;
+                color : white ;
+                padding :12px ;
+                border :none ;
+                width : 100% ;
+                border-radius: 8px;
+                font-size: 1em;
+                cursor : pointer;
+                transition: background 0.3s ;
+            }
+            button:hover {
+                background-color: #004d3a;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> التسجيل الدخول </h1>
+            <nav>
+                <a href="home.html">الرئيسية</a>
+                <a href="login.html">تسجيل الدخول</a>
+                <a href="about.html"> من نحن </a>
+            </nav>
+        </header>
+        <main>
+            <form action="home.html" method="get" >
+                <h2> ادخل بيانتك</h2>
+                <input type ="text" placeholder="اسم المستخدم " required/> 
+                <input type ="password" placeholder="كلمة السر " required/>
+                <button type ="submit">دخول </button>
+            </form>
+        </main>
+    </body>
+    </html>
